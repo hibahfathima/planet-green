@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/dist/output.css">
+</head>
+<body>
+
+
+<section class="max-w-[1600px] mx-auto px-6 md:px-16 sticky top-0 z-50 bg-white">
+  <div class="flex items-center justify-between py-6 xl:grid xl:grid-cols-2 xl:items-center">
+    <div>
+      <a href="index.html">
+        <img src="assets/images/full-logo.png" alt="Planet Green" class="h-9 md:h-12 w-auto" />
+      </a>
+    </div>
+    <div class="hidden xl:flex items-center  justify-end gap-10">
+      <a href="index.html" class="font-sans text-base text-primary-dark  hover:text-primary transition-colors">Home</a>
+      <a href="about.html" class="font-sans text-base text-primary-dark   hover:text-primary transition-colors">About</a>
+      <a href="service.html" class="font-sans text-base  text-primary   hover:text-primary transition-colors">Services</a>
+      <a href="blog.html" class="font-sans text-base text-primary-dark transition-colors">Blogs</a>
+      <a href="contact.html" class="bg-primary-dark text-white font-sans text-sm px-6 py-3 rounded-full hover:bg-primary transition-colors">
+        Contact
+      </a>
+    </div>
+    <!-- Hamburger button (below xl only) -->
+    <button id="mobile-menu-btn" class="xl:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+      <span class="w-6 h-0.5 bg-primary-dark"></span>
+      <span class="w-6 h-0.5 bg-primary-dark"></span>
+      <span class="w-6 h-0.5 bg-primary-dark"></span>
+    </button>
+  </div>
+</section>
+
+
+<!-- Mobile full-screen menu -->
+<section>
+<div id="mobile-menu" class="xl:hidden hidden fixed inset-0 w-screen h-screen bg-white z-[100] flex-col overflow-y-auto">
+   <div class="flex items-center justify-between px-6 py-6">
+    <a href="index.html">
+      <img src="assets/images/full-logo.png" alt="Planet Green" class="h-9 w-auto" />
+    </a>
+    <button id="mobile-menu-close-btn" aria-label="Close menu" class="p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+<nav class="flex flex-col gap-6 px-6 mt-4">
+    <a href="index.html" class="font-sans text-2xl text-primary-dark">Home</a>
+    <a href="about.html" class="font-sans text-2xl text-primary-dark">About</a>
+    <a href="service.html" class="font-sans text-2xl ">Services</a>
+    <a href="blog.html" class="font-sans text-2xl text-primary-dark">Blogs</a>
+    <a href="contact.html" class="bg-primary-dark text-white font-sans text-lg px-6 py-3 rounded-full text-center mt-4">Contact</a>
+  </nav>
+</div>
+</section> 
+
+
+<!-- about hero section -->
+ <section class="pt-16 md:pt-20 bg-[#66D575] overflow-hidden">
+    <div class="px-6 lg:px-0">
+        <h1 class="max-w-2xl font-sans font-medium text-[32px] md:text-[50px] tracking-[-2%] leading-[38px] md:leading-[52px] text-[#0A2E1F] mx-auto lg:mx-40 mb-8 md:mb-12">
+            Environmental consulting, on land and at sea.
+        </h1>
+
+        <div class="flex flex-col lg:flex-row lg:items-start gap-8 lg:gap-12">
+            <div class="w-full lg:w-2/5">
+                <img src="assets/images/service1.webp" alt="Environmental consulting team on boat" class="w-full h-64 sm:h-80 md:h-96 lg:w-160 lg:h-100 object-cover" />
+            </div>
+
+            <div class="w-full lg:w-3/5">
+                <p class="font-sans text-base leading-relaxed text-[#0A2E1F] mb-4 lg:w-3/5">
+                    We support projects from initial assessment through to construction and monitoring; combining regulatory expertise with hands-on technical and marine capability most consultancies don't carry in-house.
+                </p>
+
+                <a href="#" class="inline-flex items-center gap-[9.8px] font-sans font-medium text-[#0A2E1F] underline underline-offset-4">
+                    Discover More
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.33 8H12.67M12.67 8L8.67 4M12.67 8L8.67 12" stroke="#0A2E1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- service section -->
+ <section class="bg-white pt-14 md:pt-20">
+    <div class=" mx-auto px-6 lg:px-0 lg:mx-0">
+        <h2 class="text-center font-sans font-medium text-[32px] md:text-[50px] tracking-[-2%] leading-[38px] md:leading-[52px] text-[#47A95E] mx-auto lg:mx-40 mb-8 md:mb-12">
+            Our Offerings
+        </h2>
+
+        <!-- Offering 1 -->
+        <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-16 border-b border-[#66D575] ">
+            <div class="w-full lg:w-auto">
+                <div class="relative rounded-[7px] overflow-hidden">
+                    <img src="assets/images/service1.webp" alt="Environmental expertise for land, sea and everything in between" class="w-full h-64 sm:h-80 md:h-96 lg:w-120 lg:h-100 object-cover" />
+                </div>
+            </div>
+            <div class="w-full lg:w-2/5">
+                <h3 class="font-sans font-medium text-2xl leading-[27px] tracking-[-1.9%] text-[#014936] mb-3">
+                    Environmental expertise for land, sea, and everything in between.
+                </h3>
+                <p class=" font-sans font-medium text-xl leading-[119%] text-[#014936]">
+                    From impact assessment to marine mitigation, we handle the technical and regulatory work that gets projects approved and keeps them accountable.
+                </p>
+            </div>
+        </div>
+
+        <!-- Offering 2 -->
+        <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-16 border-b border-[#66D575] ">
+            <div class="w-full lg:w-auto">
+                <div class="relative rounded-[7px] overflow-hidden">
+                    <img src="assets/images/service1.webp" alt="Environmental expertise for land, sea and everything in between" class="w-full h-64 sm:h-80 md:h-96 lg:w-120 lg:h-100 object-cover" />
+                </div>
+            </div>
+            <div class="w-full lg:w-2/5">
+                <h3 class="font-sans font-medium text-2xl leading-[27px] tracking-[-1.9%] text-[#014936] mb-3">
+                    Environmental expertise for land, sea, and everything in between.
+                </h3>
+                <p class=" font-sans font-medium text-xl leading-[119%] text-[#014936]">
+                    From impact assessment to marine mitigation, we handle the technical and regulatory work that gets projects approved and keeps them accountable.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-16 border-b border-[#66D575] ">
+            <div class="w-full lg:w-auto">
+                <div class="relative rounded-[7px] overflow-hidden">
+                    <img src="assets/images/service1.webp" alt="Environmental expertise for land, sea and everything in between" class="w-full h-64 sm:h-80 md:h-96 lg:w-120 lg:h-100 object-cover" />
+                </div>
+            </div>
+            <div class="w-full lg:w-2/5">
+                <h3 class="font-sans font-medium text-2xl leading-[27px] tracking-[-1.9%] text-[#014936] mb-3">
+                    Environmental expertise for land, sea, and everything in between.
+                </h3>
+                <p class=" font-sans font-medium text-xl leading-[119%] text-[#014936]">
+                    From impact assessment to marine mitigation, we handle the technical and regulatory work that gets projects approved and keeps them accountable.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-16 border-b border-[#66D575] ">
+            <div class="w-full lg:w-auto">
+                <div class="relative rounded-[7px] overflow-hidden">
+                    <img src="assets/images/service1.webp" alt="Environmental expertise for land, sea and everything in between" class="w-full h-64 sm:h-80 md:h-96 lg:w-120 lg:h-100 object-cover" />
+                </div>
+            </div>
+            <div class="w-full lg:w-2/5">
+                <h3 class="font-sans font-medium text-2xl leading-[27px] tracking-[-1.9%] text-[#014936] mb-3">
+                    Environmental expertise for land, sea, and everything in between.
+                </h3>
+                <p class=" font-sans font-medium text-xl leading-[119%] text-[#014936]">
+                    From impact assessment to marine mitigation, we handle the technical and regulatory work that gets projects approved and keeps them accountable.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-16 border-b border-[#66D575] ">
+            <div class="w-full lg:w-auto">
+                <div class="relative rounded-[7px] overflow-hidden">
+                    <img src="assets/images/service1.webp" alt="Environmental expertise for land, sea and everything in between" class="w-full h-64 sm:h-80 md:h-96 lg:w-120 lg:h-100 object-cover" />
+                </div>
+            </div>
+            <div class="w-full lg:w-2/5">
+                <h3 class="font-sans font-medium text-2xl leading-[27px] tracking-[-1.9%] text-[#014936] mb-3">
+                    Environmental expertise for land, sea, and everything in between.
+                </h3>
+                <p class=" font-sans font-medium text-xl leading-[119%] text-[#014936]">
+                    From impact assessment to marine mitigation, we handle the technical and regulatory work that gets projects approved and keeps them accountable.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- green banner -->
+<section class="bg-primary-light py-12 sm:py-14 md:py-16">
+  <div class="max-w-[1600px] mx-auto px-6 md:px-16 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 md:gap-8 lg:gap-4">
+    
+    <h2 class="font-sans font-medium text-primary-dark text-[26px] sm:text-[32px] md:text-[38px] lg:text-[50px] leading-[1.2] lg:leading-[62px] tracking-[-0.02em] max-w-[700px]">
+      Empowering businesses towards a sustainable future
+    </h2>
+
+    <a href="/contact.html" class="inline-flex items-center gap-2 font-sans font-medium text-primary-dark text-base sm:text-lg lg:text-[29px] hover:gap-3 transition-all shrink-0">
+      Talk to us <span aria-hidden="true">→</span>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- footer -->
+<footer class="bg-primary-dark py-14 md:py-20">
+  <div class="max-w-[1600px] mx-auto px-6 md:px-16  ">
+
+  <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-10 lg:gap-6">
+
+  <p class="font-sans font-normal text-white text-[24px] lg:text-[28px] xl:text-[32px] leading-[1.3] max-w-[700px]">
+    From the Red Sea to the Arabian Gulf, we've been on the ground so your project stays on track.
+  </p>
+
+  <div class="lg:pt-1">
+    <p class="font-sans font-normal text-white text-lg mb-3">
+      Get in touch with our team
+    </p>
+
+    <form class="flex items-center border border-white rounded-full p-1.5 pl-5 max-w-[420px] w-full">
+      <input
+        type="email"
+        placeholder="Enter your email"
+        class="flex-1 bg-transparent outline-none font-sans text-sm text-primary-dark placeholder:text-gray-400 min-w-0"
+      />
+
+      <button
+        type="submit"
+        class="shrink-0 bg-primary text-white font-sans text-sm rounded-full px-6 py-2.5 hover:bg-primary-dark transition-colors"
+      >
+        Subscribe
+      </button>
+    </form>
+  </div>
+
+</div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-4  gap-10 md:gap-6 mt-16 md:mt-20">
+
+      <div>
+        <h3 class="font-sans font-medium text-[#E7E7E7] text-2xl mb-5">Quick Links</h3>
+        <ul class="space-y-3">
+          <li><a href="about.html" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">About</a></li>
+          <li><a href="service.html" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">Services</a></li>
+          <li><a href="contact.html" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">Contact</a></li>
+          <li><a href="blog.html" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">Blogs</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-sans font-medium text-[#E7E7E7] text-2xl mb-5">UAE</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2">
+            <img src="assets/images/location-icon.png" class="h-[24px] w-auto" alt="" srcset="">
+            <span class="font-sans font-normal text-white text-lg leading-snug">Office No: OFF2-0113, Ras Al Khor Industrial Area 3rd, Bur Dubai</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="assets/images/phone-icon.png" class="h-[24px] w-auto" alt="">
+            <a href="tel:+971503557600" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">+971 50-355-7600</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-sans font-medium text-[#E7E7E7] text-2xl mb-5 md:mt-10 xl:mt-0">KSA</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2">
+            <img src="assets/images/location-icon.png" class="h-[24px] w-auto" alt="">
+            <span class="font-sans font-normal text-white text-lg leading-snug">Office No: OFF2-0113, Ras Al Khor Industrial Area 3rd, Bur Dubai</span>
+          </li>
+          <li class="flex items-center gap-2">
+           <img src="assets/images/phone-icon.png" class="h-[24px] w-auto" alt="">
+            <a href="tel:+971503557600" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">+971 50-355-7600</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex md:justify-end items-center">
+        <img src="assets/images/pg-logo.png" alt="Planet Green logo" class="h-8 md:h-12 w-auto object-contain" />
+      </div>
+
+    </div>
+
+    <div class="mt-16 md:mt-20 flex justify-center">
+      <p class="font-sans font-normal text-[#B9B9B9] text-base">&copy; Copyright 2026 Planet Green</p>
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="assets/js/main.js" defer></script>
+    
+</body>
+</html>

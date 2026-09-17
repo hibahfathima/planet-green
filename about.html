@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/dist/output.css">
+</head>
+<body class="font-sans">
+
+
+  <section class="max-w-[1600px] mx-auto px-6 md:px-16 sticky top-0 z-50 bg-white">
+  <div class="flex items-center justify-between py-6 xl:grid xl:grid-cols-2 xl:items-center">
+    <div>
+      <a href="index.html">
+        <img src="assets/images/full-logo.png" alt="Planet Green" class="h-9 md:h-12 w-auto" />
+      </a>
+    </div>
+    <div class="hidden xl:flex items-center  justify-end gap-10">
+      <a href="index.html" class="font-sans text-base text-primary-dark  hover:text-primary transition-colors">Home</a>
+      <a href="about.html" class="font-sans text-base text-primary   hover:text-primary transition-colors">About</a>
+      <a href="service.html" class="font-sans text-base  text-primary-dark   hover:text-primary transition-colors">Services</a>
+      <a href="blog.html" class="font-sans text-base text-primary-dark transition-colors">Blogs</a>
+      <a href="contact.html" class="bg-primary-dark text-white font-sans text-sm px-6 py-3 rounded-full hover:bg-primary transition-colors">
+        Contact
+      </a>
+    </div>
+    <!-- Hamburger button (below xl only) -->
+    <button id="mobile-menu-btn" class="xl:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+      <span class="w-6 h-0.5 bg-primary-dark"></span>
+      <span class="w-6 h-0.5 bg-primary-dark"></span>
+      <span class="w-6 h-0.5 bg-primary-dark"></span>
+    </button>
+  </div>
+</section>
+
+
+<!-- Mobile full-screen menu -->
+<section>
+<div id="mobile-menu" class="xl:hidden hidden fixed inset-0 w-screen h-screen bg-white z-[100] flex-col overflow-y-auto">
+   <div class="flex items-center justify-between px-6 py-6">
+    <a href="index.html">
+      <img src="assets/images/full-logo.png" alt="Planet Green" class="h-9 w-auto" />
+    </a>
+    <button id="mobile-menu-close-btn" aria-label="Close menu" class="p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+<nav class="flex flex-col gap-6 px-6 mt-4">
+    <a href="index.html" class="font-sans text-2xl text-primary-dark">Home</a>
+    <a href="about.html" class="font-sans text-2xl text-primary">About</a>
+    <a href="service.html" class="font-sans text-2xl text-primary-dark">Services</a>
+    <a href="blog.html" class="font-sans text-2xl text-primary-dark">Blogs</a>
+    <a href="contact.html" class="bg-primary-dark text-white font-sans text-lg px-6 py-3 rounded-full text-center mt-4">Contact</a>
+  </nav>
+</div>
+</section>
+
+
+<!--  Hero section -->
+<section class="relative">
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/images/about-hero-image.webp');"></div>
+  <div class="absolute inset-0 bg-primary-dark/40"></div>
+  <div class="relative z-10 max-w-[1600px] mx-auto px-6 md:px-16 text-center py-20 sm:py-28 lg:py-40">
+    <ul class="flex items-center justify-center gap-2.5 text-white text-xs font-medium uppercase tracking-[0.2em] list-none p-0 m-0">
+      <li><a href="index.html" class="opacity-70 hover:opacity-100 transition">Home</a></li>
+      <li>/</li>
+      <li><span>About</span></li>
+    </ul>
+    <h2 class="mt-6 text-white font-medium leading-none text-4xl sm:text-5xl lg:text-7xl">About</h2>
+  </div>
+</section>
+
+
+
+<section class="w-full bg-white">
+<div class="max-w-[1300px] mx-auto px-5 sm:px-8 md:px-10 lg:px-16 py-14 md:py-24">
+ <div class="w-full">
+    <h2 class="w-full max-w-[700px] font-sans font-medium text-[#47A95E] text-[34px] sm:text-[40px] md:text-[46px] lg:text-[50px] leading-[1.05]">
+        Over 20 years in environmental consulting
+      </h2>
+ </div>
+<!-- accordion -->
+    <div class="flex flex-col lg:flex-row justify-center gap-10 lg:gap-10 mt-12 sm:mt-14 md:mt-16 lg:mt-20">
+      <!-- left accordion -->
+      <div class="w-full lg:w-1/2 flex justify-start">
+           <div class="w-full max-w-[500px]">
+
+          <button
+            type="button"
+            class="accordion-item w-full flex items-center gap-4 border-b border-[#B8E8C1] py-3 text-left hover:cursor-pointer"
+            data-content="content-1">
+
+            <span class="accordion-icon font-sans font-normal text-[#54D96F] text-3xl leading-none">
+              +
+            </span>
+
+            <p
+             class="font-sans font-normal text-[#00594F] text-base md:text-lg">
+              Environmental Impact Assessments (EIA)
+            </p>
+
+          </button>
+
+
+          <!-- =====================================
+               ITEM 2
+          ====================================== -->
+          <button
+            type="button"
+            class="accordion-item w-full flex items-center gap-4 border-b border-[#B8E8C1] py-3 text-left hover:cursor-pointer"
+            data-content="content-2"
+          >
+
+            <span
+              class="accordion-icon font-sans font-normal text-[#54D96F] text-3xl leading-none"
+            >
+              +
+            </span>
+
+            <p
+              class="font-sans font-normal text-[#00594F] text-base md:text-lg"
+            >
+              Modeling &amp; Technical Studies
+            </p>
+
+          </button>
+
+
+          <!-- =====================================
+               ITEM 3
+          ====================================== -->
+          <button
+            type="button"
+            class="accordion-item w-full flex items-center gap-4 border-b border-[#B8E8C1] py-3 text-left hover:cursor-pointer"
+            data-content="content-3"
+          >
+
+            <span
+              class="accordion-icon font-sans font-normal text-[#54D96F] text-3xl leading-none"
+            >
+              +
+            </span>
+
+            <p
+              class="font-sans font-normal text-[#00594F] text-base md:text-lg"
+            >
+              Environmental Permitting
+            </p>
+
+          </button>
+
+
+          <!-- =====================================
+               ITEM 4
+          ====================================== -->
+          <button
+            type="button"
+            class="accordion-item w-full flex items-center gap-4 border-b border-[#B8E8C1] py-3 text-left hover:cursor-pointer"
+            data-content="content-4"
+          >
+
+            <span
+              class="accordion-icon font-sans font-normal text-[#54D96F] text-3xl leading-none"
+            >
+              +
+            </span>
+
+            <p
+              class="font-sans font-normal text-[#00594F] text-base md:text-lg"
+            >
+              Monitoring &amp; Compliance
+            </p>
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- =====================================
+           RIGHT - ACCORDION CONTENT
+      ====================================== -->
+      <div class="w-full lg:w-1/2 flex justify-end">
+
+        <div class="w-full max-w-[520px]">
+
+
+          <!-- =====================================
+               CONTENT 1
+          ====================================== -->
+          <div
+            id="content-1"
+            class="accordion-content"
+          >
+
+            <p
+              class="font-sans font-normal text-[#00594F] text-base md:text-lg leading-[1.35]"
+            >
+              We provide comprehensive Environmental Impact Assessments
+              that identify potential environmental risks and opportunities
+              before a project begins. Our team evaluates impacts on land,
+              water, air, biodiversity, and surrounding communities.
+            </p>
+
+            <p
+              class="font-sans font-normal text-[#00594F] text-base md:text-lg leading-[1.35] mt-6"
+            >
+              Our assessments help clients understand regulatory requirements,
+              reduce environmental risks, and move projects forward with
+              confidence while meeting local and international standards.
+            </p>
+
+          </div>
+
+
+          <!-- =====================================
+               CONTENT 2
+          ====================================== -->
+          <div
+            id="content-2"
+            class="accordion-content hidden"
+          >
+
+            <p
+              class="font-sans font-normal text-[#00594F] text-base md:text-lg leading-[1.35]"
+            >
+              Our modeling and technical studies provide reliable data for
+              understanding how proposed developments may affect the
+              surrounding environment. We use technical analysis to evaluate
+              air quality, noise, water systems, and other environmental
+              factors.
+            </p>
+
+            <p
+              class="font-sans font-normal text-[#00594F] text-base md:text-lg leading-[1.35] mt-6"
+            >
+              These studies give project teams the technical evidence needed
+              to make informed decisions, improve project design, and meet
+              environmental approval requirements.
+            </p>
+
+          </div>
+
+
+          <!-- =====================================
+               CONTENT 3
+          ====================================== -->
+          <div
+            id="content-3"
+            class="accordion-content hidden"
+          >
+
+            <p
+              class="font-sans font-normal text-[#00594F] text-base md:text-lg leading-[1.35]"
+            >
+              We support clients throughout the environmental permitting
+              process, from identifying applicable requirements to preparing
+              technical documentation and supporting regulatory submissions.
+            </p>
+
+            <p
+              class="font-sans font-normal text-[#00594F] text-base md:text-lg leading-[1.35] mt-6"
+            >
+              Our team works closely with project stakeholders to make the
+              approval process clear and efficient, helping projects satisfy
+              environmental regulations and progress toward implementation.
+            </p>
+
+          </div>
+
+
+          <!-- =====================================
+               CONTENT 4
+          ====================================== -->
+          <div
+            id="content-4"
+            class="accordion-content hidden"
+          >
+
+            <p
+              class="font-sans font-normal text-[#00594F] text-base md:text-lg leading-[1.35]"
+            >
+              Our monitoring and compliance services help businesses maintain
+              environmental performance throughout the life of a project. We
+              regularly evaluate operations against approved environmental
+              requirements and agreed performance standards.
+            </p>
+
+            <p
+              class="font-sans font-normal text-[#00594F] text-base md:text-lg leading-[1.35] mt-6"
+            >
+              From ongoing monitoring to compliance reporting, we help clients
+              identify issues early, take corrective action, and maintain
+              responsible environmental practices.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="w-full">
+
+  <div class="max-w-[1600px] mx-auto flex flex-col lg:flex-row border-t border-[#66D575]">
+
+    <!-- =====================================
+         LEFT CONTENT - 40%
+    ====================================== -->
+    <div class="w-full lg:w-2/5 bg-white px-8 sm:px-10 md:px-12 lg:px-16 py-14 md:py-20">
+
+      <h2
+        class="font-sans font-medium text-[#014936] text-[28px] sm:text-[30px] md:text-[32px] lg:text-[50px] leading-[1.1]"
+      >
+        Meet the Team
+      </h2>
+
+
+      <p
+        class="mt-14 sm:mt-16 md:mt-20 max-w-[420px] font-sans font-normal text-[#00594F] text-sm md:text-base leading-[1.15]"
+      >
+        Behind every assessment is a team that's spent years in the
+        field, walking sites, running the models, and sitting across
+        the table from regulators to get projects approved. Our
+        consultants hold doctorates in environmental science and
+        related disciplines, but what matters more is the work:
+        EIAs, permitting, and monitoring plans delivered across
+        energy, mining, transportation, and industrial development
+        projects throughout the Gulf region.
+      </p>
+
+    </div>
+
+
+    <!-- =====================================
+         RIGHT CONTENT - 60%
+    ====================================== -->
+    <div
+      class="w-full lg:w-3/5 bg-primary-dark px-8 sm:px-10 md:px-12 lg:px-16 py-14 md:py-16"
+    >
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-12 md:gap-y-14">
+
+        <!-- TEAM MEMBER 1 -->
+        <div>
+          <h3
+            class="font-inter font-medium lg:text-[24px] text-white text-base md:text-lg  leading-[1.1]"
+          >
+            Dr Zahid Nazeer
+          </h3>
+
+          <p
+            class="mt-1 font-inter font-light text-white lg:text-[15px]  text-[10px] md:text-xs leading-[1.2]"
+          >
+            Chief Executive Officer
+          </p>
+
+          <p
+            class="mt-5 font-inter font-light text-white lg:text-[15px]  text-[10px] md:text-xs leading-[1.2]"
+          >
+            PhD in Environmental Studies
+          </p>
+        </div>
+
+
+        <!-- TEAM MEMBER 2 -->
+        <div>
+          <h3
+            class="font-inter font-medium lg:text-[24px] text-white text-base md:text-lg leading-[1.1]"
+          >
+            Abdurahman
+          </h3>
+
+          <p
+            class="mt-1 font-inter font-light text-white lg:text-[15px]  text-[10px] md:text-xs leading-[1.2]"
+          >
+            Chairman
+          </p>
+
+          <p
+            class="mt-5 font-inter font-light text-white lg:text-[15px]  text-[10px] md:text-xs leading-[1.2]"
+          >
+            PhD in Environmental Studies
+          </p>
+        </div>
+
+
+        <!-- TEAM MEMBER 3 -->
+        <div>
+          <h3
+            class="font-inter font-medium lg:text-[24px] text-white text-base md:text-lg leading-[1.1]"
+          >
+            Sharon Philip MSc
+          </h3>
+
+          <p
+            class="mt-1 font-inter font-light text-white lg:text-[15px]  text-[10px] md:text-xs leading-[1.2]"
+          >
+            Oceanographer
+          </p>
+
+          <p
+            class="mt-5 font-inter font-light text-white lg:text-[15px]  text-[10px] md:text-xs leading-[1.2]"
+          >
+            PhD in Environmental Studies
+          </p>
+        </div>
+
+
+        <!-- TEAM MEMBER 4 -->
+        <div>
+          <h3
+            class="font-inter font-medium lg:text-[24px] text-white text-base md:text-lg leading-[1.1]"
+          >
+            Deema Al Khalidi
+          </h3>
+
+          <p
+            class="mt-1 font-inter font-light text-white lg:text-[15px]  text-[10px] md:text-xs leading-[1.2]"
+          >
+            Environmental Specialist
+          </p>
+
+          <p
+            class="mt-5 font-inter font-light text-white lg:text-[15px]  text-[10px] md:text-xs leading-[1.2]"
+          >
+            PhD in Environmental Studies
+          </p>
+        </div>
+
+
+        <!-- TEAM MEMBER 5 -->
+        <div>
+          <h3
+            class="font-inter font-medium lg:text-[24px] text-white text-base md:text-lg leading-[1.1]"
+          >
+            Miyan Tofael
+          </h3>
+
+          <p
+            class="mt-1 font-sans font-light text-white lg:text-[15px]  text-[10px] md:text-xs leading-[1.2]"
+          >
+            Business Director
+          </p>
+
+          <p
+            class="mt-5 font-inter font-light text-white lg:text-[15px]  text-[10px] md:text-xs leading-[1.2]"
+          >
+            PhD in Environmental Studies
+          </p>
+        </div>
+
+
+        <!-- TEAM MEMBER 6 -->
+        <div>
+          <h3
+            class="font-inter font-medium lg:text-[24px] text-white text-base md:text-lg leading-[1.1]"
+          >
+            Deema Al Khalidi
+          </h3>
+
+          <p
+            class="mt-1 font-inter font-light text-white lg:text-[15px]  text-[10px] md:text-xs leading-[1.2]"
+          >
+            Ecologist
+          </p>
+
+          <p
+            class="mt-5 font-inter font-light text-white lg:text-[15px]  text-[10px] md:text-xs leading-[1.2]"
+          >
+            PhD in Environmental Studies
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- green banner -->
+<section class="bg-primary-light py-12 sm:py-14 md:py-16">
+  <div class="max-w-[1600px] mx-auto px-6 md:px-16 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 md:gap-8 lg:gap-4">
+    
+    <h2 class="font-sans font-medium text-primary-dark text-[26px] sm:text-[32px] md:text-[38px] lg:text-[50px] leading-[1.2] lg:leading-[62px] tracking-[-0.02em] max-w-[700px]">
+      Empowering businesses towards a sustainable future
+    </h2>
+
+    <a href="/contact.html" class="inline-flex items-center gap-2 font-sans font-medium text-primary-dark text-base sm:text-lg lg:text-[29px] hover:gap-3 transition-all shrink-0">
+      Talk to us <span aria-hidden="true">→</span>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- footer -->
+<footer class="bg-primary-dark py-14 md:py-20">
+  <div class="max-w-[1600px] mx-auto px-6 md:px-16  ">
+
+  <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-10 lg:gap-6">
+
+  <p class="font-sans font-normal text-white text-[24px] lg:text-[28px] xl:text-[32px] leading-[1.3] max-w-[700px]">
+    From the Red Sea to the Arabian Gulf, we've been on the ground so your project stays on track.
+  </p>
+
+  <div class="lg:pt-1">
+    <p class="font-sans font-normal text-white text-lg mb-3">
+      Get in touch with our team
+    </p>
+
+    <form class="flex items-center border border-white rounded-full p-1.5 pl-5 max-w-[420px] w-full">
+      <input
+        type="email"
+        placeholder="Enter your email"
+        class="flex-1 bg-transparent outline-none font-sans text-sm text-primary-dark placeholder:text-gray-400 min-w-0"
+      />
+
+      <button
+        type="submit"
+        class="shrink-0 bg-primary text-white font-sans text-sm rounded-full px-6 py-2.5 hover:bg-primary-dark transition-colors"
+      >
+        Subscribe
+      </button>
+    </form>
+  </div>
+
+</div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-4  gap-10 md:gap-6 mt-16 md:mt-20">
+
+      <div>
+        <h3 class="font-sans font-medium text-[#E7E7E7] text-2xl mb-5">Quick Links</h3>
+        <ul class="space-y-3">
+          <li><a href="about.html" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">About</a></li>
+          <li><a href="service.html" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">Services</a></li>
+          <li><a href="contact.html" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">Contact</a></li>
+          <li><a href="blog.html" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">Blogs</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-sans font-medium text-[#E7E7E7] text-2xl mb-5">UAE</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2">
+            <img src="assets/images/location-icon.png" class="h-[24px] w-auto" alt="" srcset="">
+            <span class="font-sans font-normal text-white text-lg leading-snug">Office No: OFF2-0113, Ras Al Khor Industrial Area 3rd, Bur Dubai</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="assets/images/phone-icon.png" class="h-[24px] w-auto" alt="">
+            <a href="tel:+971503557600" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">+971 50-355-7600</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-sans font-medium text-[#E7E7E7] text-2xl mb-5 md:mt-10 xl:mt-0">KSA</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2">
+            <img src="assets/images/location-icon.png" class="h-[24px] w-auto" alt="">
+            <span class="font-sans font-normal text-white text-lg leading-snug">Office No: OFF2-0113, Ras Al Khor Industrial Area 3rd, Bur Dubai</span>
+          </li>
+          <li class="flex items-center gap-2">
+           <img src="assets/images/phone-icon.png" class="h-[24px] w-auto" alt="">
+            <a href="tel:+971503557600" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">+971 50-355-7600</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex md:justify-end items-center">
+        <img src="assets/images/pg-logo.png" alt="Planet Green logo" class="h-8 md:h-12 w-auto object-contain" />
+      </div>
+
+    </div>
+
+    <div class="mt-16 md:mt-20 flex justify-center">
+      <p class="font-sans font-normal text-[#B9B9B9] text-base">&copy; Copyright 2026 Planet Green</p>
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
