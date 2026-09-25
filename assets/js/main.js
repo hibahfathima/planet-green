@@ -18,57 +18,27 @@ if (track && prevBtn && nextBtn) {
 // ABOUT PAGE ACCORDION
 // =====================================
 
-const accordionItems = document.querySelectorAll(".accordion-item");
+ document.querySelectorAll('.m-accordion-item').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var wrapper = btn.parentElement;
+      var content = wrapper.querySelector('.m-accordion-content');
+      var icon = btn.querySelector('.m-accordion-icon');
+      var isOpen = !content.classList.contains('hidden');
 
-if (accordionItems.length > 0) {
-
-  const accordionContents =
-    document.querySelectorAll(".accordion-content");
-
-  accordionItems.forEach((item) => {
-
-    item.addEventListener("click", () => {
-
-      const targetId = item.dataset.content;
-
-      // Hide all contents
-      accordionContents.forEach((content) => {
-        content.classList.add("hidden");
+      // close all other open items
+      document.querySelectorAll('.m-accordion-content').forEach(function (c) {
+        c.classList.add('hidden');
+      });
+      document.querySelectorAll('.m-accordion-icon').forEach(function (i) {
+        i.textContent = '+';
       });
 
-      // Reset all icons
-      accordionItems.forEach((accordionItem) => {
-
-        const icon =
-          accordionItem.querySelector(".accordion-icon");
-
-        if (icon) {
-          icon.textContent = "+";
-        }
-
-      });
-
-      // Show selected content
-      const targetContent =
-        document.getElementById(targetId);
-
-      if (targetContent) {
-        targetContent.classList.remove("hidden");
+      if (!isOpen) {
+        content.classList.remove('hidden');
+        icon.textContent = '−';
       }
-
-      // Change selected icon
-      const selectedIcon =
-        item.querySelector(".accordion-icon");
-
-      if (selectedIcon) {
-        selectedIcon.textContent = "−";
-      }
-
     });
-
   });
-
-}
 
 // =====================================
 // MOBILE MENU
