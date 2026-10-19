@@ -216,9 +216,6 @@
   .top-0 {
     top: 0px;
   }
-  .top-1 {
-    top: var(--spacing);
-  }
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
   }
@@ -260,12 +257,6 @@
   }
   .ms-0 {
     margin-inline-start: 0px;
-  }
-  .ms-10 {
-    margin-inline-start: calc(var(--spacing) * 10);
-  }
-  .ms-20 {
-    margin-inline-start: calc(var(--spacing) * 20);
   }
   .mt-1 {
     margin-top: var(--spacing);
@@ -336,9 +327,6 @@
   .aspect-\[577\/677\] {
     aspect-ratio: 577/677;
   }
-  .h-0 {
-    height: 0px;
-  }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
   }
@@ -389,9 +377,6 @@
   }
   .min-h-\[600px\] {
     min-height: 600px;
-  }
-  .w-1 {
-    width: var(--spacing);
   }
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
@@ -483,18 +468,8 @@
   .flex-1 {
     flex: 1;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
@@ -502,9 +477,6 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .resize {
-    resize: both;
   }
   .snap-x {
     scroll-snap-type: x var(--tw-scroll-snap-strictness);
@@ -596,9 +568,6 @@
   }
   .self-center {
     align-self: center;
-  }
-  .self-start {
-    align-self: flex-start;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -721,17 +690,11 @@
   .bg-cover {
     background-size: cover;
   }
-  .bg-bottom {
-    background-position: bottom;
-  }
   .bg-center {
     background-position: center;
   }
   .bg-left-bottom {
     background-position: left bottom;
-  }
-  .bg-left-top {
-    background-position: left top;
   }
   .bg-top {
     background-position: top;
@@ -744,9 +707,6 @@
   }
   .object-top {
     object-position: top;
-  }
-  .p-1 {
-    padding: var(--spacing);
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
@@ -765,9 +725,6 @@
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
-  }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
   }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
@@ -930,10 +887,6 @@
     --tw-leading: 38px;
     line-height: 38px;
   }
-  .leading-\[119\%\] {
-    --tw-leading: 119%;
-    line-height: 119%;
-  }
   .leading-\[150\%\] {
     --tw-leading: 150%;
     line-height: 150%;
@@ -1026,9 +979,6 @@
   .text-\[\#F5F5F5\]\/90 {
     color: color-mix(in oklab, #F5F5F5 90%, transparent);
   }
-  .text-\[20p\] {
-    color: 20p;
-  }
   .text-black {
     color: var(--color-black);
   }
@@ -1069,10 +1019,6 @@
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -1214,9 +1160,6 @@
     .md\:mx-20 {
       margin-inline: calc(var(--spacing) * 20);
     }
-    .md\:ms-20 {
-      margin-inline-start: calc(var(--spacing) * 20);
-    }
     .md\:mt-0 {
       margin-top: 0px;
     }
@@ -1319,9 +1262,6 @@
     .md\:gap-8 {
       gap: calc(var(--spacing) * 8);
     }
-    .md\:gap-12 {
-      gap: calc(var(--spacing) * 12);
-    }
     .md\:gap-16 {
       gap: calc(var(--spacing) * 16);
     }
@@ -1348,9 +1288,6 @@
     }
     .md\:px-20 {
       padding-inline: calc(var(--spacing) * 20);
-    }
-    .md\:py-0 {
-      padding-block: 0px;
     }
     .md\:py-4 {
       padding-block: calc(var(--spacing) * 4);
@@ -1401,9 +1338,6 @@
     .md\:text-xs {
       font-size: var(--text-xs);
       line-height: var(--tw-leading, var(--text-xs--line-height));
-    }
-    .md\:text-\[14px\] {
-      font-size: 14px;
     }
     .md\:text-\[15px\] {
       font-size: 15px;
@@ -1463,16 +1397,9 @@
       --tw-leading: 72px;
       line-height: 72px;
     }
-    .md\:leading-\[119\%\] {
-      --tw-leading: 119%;
-      line-height: 119%;
-    }
     .md\:leading-tight {
       --tw-leading: var(--leading-tight);
       line-height: var(--leading-tight);
-    }
-    .md\:text-\[px\] {
-      color: px;
     }
   }
   @media (width >= 64rem) {
@@ -1623,9 +1550,6 @@
     .lg\:pb-24 {
       padding-bottom: calc(var(--spacing) * 24);
     }
-    .lg\:text-\[14px\] {
-      font-size: 14px;
-    }
     .lg\:text-\[15px\] {
       font-size: 15px;
     }
@@ -1643,9 +1567,6 @@
     }
     .lg\:text-\[28px\] {
       font-size: 28px;
-    }
-    .lg\:text-\[30px\] {
-      font-size: 30px;
     }
     .lg\:text-\[36px\] {
       font-size: 36px;
@@ -1667,9 +1588,6 @@
     .lg\:leading-\[119\%\] {
       --tw-leading: 119%;
       line-height: 119%;
-    }
-    .lg\:text-\[px\] {
-      color: px;
     }
   }
   @media (width >= 80rem) {
@@ -1712,9 +1630,6 @@
     .xl\:py-24 {
       padding-block: calc(var(--spacing) * 24);
     }
-    .xl\:text-\[3px\] {
-      font-size: 3px;
-    }
     .xl\:text-\[20px\] {
       font-size: 20px;
     }
@@ -1723,9 +1638,6 @@
     }
     .xl\:text-\[28px\] {
       font-size: 28px;
-    }
-    .xl\:text-\[30px\] {
-      font-size: 30px;
     }
     .xl\:text-\[33px\] {
       font-size: 33px;
@@ -1747,9 +1659,6 @@
     .xl\:leading-none {
       --tw-leading: 1;
       line-height: 1;
-    }
-    .xl\:text-\[px\] {
-      color: px;
     }
   }
 }
@@ -1985,11 +1894,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -2049,7 +1953,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
