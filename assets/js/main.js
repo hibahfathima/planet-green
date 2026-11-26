@@ -66,3 +66,4 @@ if (menuBtn && mobileMenu) {
 if (closeBtn && mobileMenu) {
   closeBtn.addEventListener('click', closeMobileMenu);
 }
+
