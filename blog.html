@@ -1,288 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   <link rel="stylesheet" href="./assets/dist/output.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Environmental Insights & Guides | Planet Green</title>
+  <meta name="description"
+    content="Articles on environmental impact assessments, permitting, sustainability and compliance from the Planet Green team.">
+  <link rel="canonical" href="https://www.yourdomain.com/blog">
+  <meta property="og:title" content="Planet Green Blog">
+  <meta property="og:description"
+    content="Environmental insights, guides and industry updates from the Planet Green team.">
+  <meta property="og:url" content="https://www.yourdomain.com/blog">
+  <meta name="twitter:title" content="Planet Green Blog">
+  <meta name="twitter:description"
+    content="Environmental insights, guides and industry updates from the Planet Green team.">
+  <link rel="stylesheet" href="./assets/dist/output.css">
 </head>
+
 <body class="font-sans">
 
-<!-- Navbar -->
-<section class="max-w-[1600px] mx-auto px-6 md:px-16 sticky top-0 z-50 bg-white">
-  <div class="flex items-center justify-between py-6 xl:grid xl:grid-cols-2 xl:items-center">
+  <!-- Navbar -->
+  <section class="max-w-[1600px] mx-auto px-6 md:px-16 sticky top-0 z-50 bg-white">
+    <div class="flex items-center justify-between py-6 xl:grid xl:grid-cols-2 xl:items-center">
 
-    <!-- Div 1: Logo -->
-    <div>
-      <a href="index.html">
-        <img src="assets/images/full-logo.png" alt="Planet Green" class="h-9 md:h-12 w-auto" />
-      </a>
-    </div>
-
-    <!-- Div 2: Menu (xl and up only) -->
-    <div class="hidden xl:flex items-center  justify-end gap-10">
-      <a href="index.html" class="font-sans text-base text-[#014936] hover:text-primary transition-colors">Home</a>
-      <a href="about.html" class="font-sans text-base text-[#014936]  hover:text-primary transition-colors">About</a>
-      <a href="service.html" class="font-sans text-base  text-[#014936]  hover:text-primary transition-colors">Services</a>
-      <a href="blog.html" class="font-sans text-base text-primary transition-colors">Blogs</a>
-      <a href="contact.html" class="bg-primary-dark text-white font-sans text-sm px-6 py-3 rounded-full hover:bg-primary transition-colors">
-        Contact
-      </a>
-    </div>
-
-    <!-- Hamburger button (below xl only) -->
-    <button id="mobile-menu-btn" class="xl:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
-      <span class="w-6 h-0.5 bg-primary-dark"></span>
-      <span class="w-6 h-0.5 bg-primary-dark"></span>
-      <span class="w-6 h-0.5 bg-primary-dark"></span>
-    </button>
-  </div>
-</section>
-
-<!-- Mobile full-screen menu -->
-<div id="mobile-menu" class="xl:hidden hidden fixed inset-0 w-screen h-screen bg-white z-[100] flex-col overflow-y-auto">
-
-  <div class="flex items-center justify-between px-6 py-6">
-    <a href="index.html">
-      <img src="assets/images/full-logo.png" alt="Planet Green" class="h-9 w-auto" />
-    </a>
-    <button id="mobile-menu-close-btn" aria-label="Close menu" class="p-2">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
-  </div>
-
-  <nav class="flex flex-col gap-6 px-6 mt-4">
-    <a href="index.html" class="font-sans text-2xl text-primary-dark">Home</a>
-    <a href="about.html" class="font-sans text-2xl text-primary-dark">About</a>
-    <a href="service.html" class="font-sans text-2xl text-primary-dark">Services</a>
-    <a href="blog.html" class="font-sans text-2xl text-primary">Blogs</a>
-    <a href="contact.html" class="bg-primary-dark text-white font-sans text-lg px-6 py-3 rounded-full text-center mt-4">Contact</a>
-  </nav>
-</div>
-
-
-<section class="w-full py-14 md:py-20">
-<div class="max-w-[1600px] mx-auto px-6 md:px-16">
-  <!-- Section Heading -->
-  <div class="text-left font-sans font-medium mb-10 md:mb-12 lg:mb-14 flex justify-center">
-    <h2 class="inline-block font-sans font-medium text-[32px] md:text-[48px] lg:text-[50px] text-[#014936] leading-tight">
-      Featured stories
-    </h2>
-  </div>
-<!-- Stories Container -->
-  <div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-     <!-- STORY CARD 1 -->
-      <article class="relative aspect-[577/677] overflow-hidden rounded-[5px] group">
-
-        <!-- Image -->
-         <a href="/blog-post-one.html">
-        <img
-          src="assets/images/blog-5-ways.webp"
-          alt="Businesses reducing their environmental impact"
-          class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        >
-
-        <!-- Dark Gradient -->
-        <div class="absolute inset-0 bg-gradient-to-t from-[#014936]/80 from-[5%] to-transparent to-[41%]"></div>
-
-        <!-- Content -->
-        <div class="absolute inset-x-0 bottom-0 p-5 md:p-5 lg:p-6">
-
-          <h3 class="font-inter font-medium text-[18px] md:text-[20px] lg:text-[25px] text-white tracking-[-0.019em] leading-[1.15] max-w-[90%]">
-            5 Ways Businesses can reduce their environmental impact
-          </h3>
-
-          <p
-            
-            class="inline-block mt-3 font-sans font-normal text-white text-xs lg:text-[15px] underline underline-offset-2 hover:text-primary-light transition-colors"
-          >
-            Read More
-        </p>
-
-        </div>
+      <!-- Div 1: Logo -->
+      <div>
+        <a href="index.html">
+          <img src="assets/images/full-logo.png" alt="Planet Green" class="h-9 md:h-12 w-auto" />
         </a>
+      </div>
 
-      </article>
+      <!-- Div 2: Menu (xl and up only) -->
+      <div class="hidden xl:flex items-center  justify-end gap-10">
+        <a href="index.html" class="font-sans text-base text-[#014936] hover:text-primary transition-colors">Home</a>
+        <a href="about.html" class="font-sans text-base text-[#014936]  hover:text-primary transition-colors">About</a>
+        <a href="service.html"
+          class="font-sans text-base  text-[#014936]  hover:text-primary transition-colors">Services</a>
+        <a href="blog.html" class="font-sans text-base text-primary transition-colors">Blogs</a>
+        <a href="contact.html"
+          class="bg-primary-dark text-white font-sans text-sm px-6 py-3 rounded-full hover:bg-primary transition-colors">
+          Contact
+        </a>
+      </div>
 
-      <!-- STORY CARD 2 -->
-      <article class="relative aspect-[577/677] overflow-hidden rounded-[5px] group">
+      <!-- Hamburger button (below xl only) -->
+      <button id="mobile-menu-btn" class="xl:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+        <span class="w-6 h-0.5 bg-primary-dark"></span>
+        <span class="w-6 h-0.5 bg-primary-dark"></span>
+        <span class="w-6 h-0.5 bg-primary-dark"></span>
+      </button>
+    </div>
+  </section>
 
-        <!-- Image -->
-         <a href="blog-post-two.html">
-        <img
-          src="assets/images/blog-two.webp"
-          alt="Businesses reducing their environmental impact"
-          class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        >
+  <!-- Mobile full-screen menu -->
+  <div id="mobile-menu"
+    class="xl:hidden hidden fixed inset-0 w-screen h-screen bg-white z-[100] flex-col overflow-y-auto">
 
-        <!-- Dark Gradient -->
-        <div class="absolute inset-0 bg-gradient-to-t from-[#014936]/80 from-[5%] to-transparent to-[41%]"></div>
+    <div class="flex items-center justify-between px-6 py-6">
+      <a href="index.html">
+        <img src="assets/images/full-logo.png" alt="Planet Green" class="h-9 w-auto" />
+      </a>
+      <button id="mobile-menu-close-btn" aria-label="Close menu" class="p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-dark" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
 
-        <!-- Content -->
-        <div class="absolute inset-x-0 bottom-0 p-5 md:p-5 lg:p-6">
+    <nav class="flex flex-col gap-6 px-6 mt-4">
+      <a href="index.html" class="font-sans text-2xl text-primary-dark">Home</a>
+      <a href="about.html" class="font-sans text-2xl text-primary-dark">About</a>
+      <a href="service.html" class="font-sans text-2xl text-primary-dark">Services</a>
+      <a href="blog.html" class="font-sans text-2xl text-primary">Blogs</a>
+      <a href="contact.html"
+        class="bg-primary-dark text-white font-sans text-lg px-6 py-3 rounded-full text-center mt-4">Contact</a>
+    </nav>
+  </div>
 
-          <h3 class="font-inter font-medium text-[18px] md:text-[20px] lg:text-[25px] text-white tracking-[-0.019em] leading-[1.15] max-w-[90%]">
-           The Importance of Environmental Impact Assessments
-          </h3>
 
-          <p
-            
-            class="inline-block mt-3 font-sans font-normal text-white text-xs lg:text-[15px] underline underline-offset-2 hover:text-primary-light transition-colors"
-          >
-            Read More
-        </p>
+  <section class="w-full py-14 md:py-20">
+    <div class="max-w-[1600px] mx-auto px-6 md:px-16">
+      <!-- Section Heading -->
+      <div class="text-left font-sans font-medium mb-10 md:mb-12 lg:mb-14 flex justify-center">
+        <h2
+          class="inline-block font-sans font-medium text-[32px] md:text-[48px] lg:text-[50px] text-[#014936] leading-tight">
+          Featured stories
+        </h2>
+      </div>
+      <!-- Stories Container -->
+      <div class="max-w-[1200px] mx-auto px-5 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- STORY CARD 1 -->
+          <article class="relative aspect-[577/677] overflow-hidden rounded-[5px] group">
+
+            <!-- Image -->
+            <a href="/blog-post-one.html">
+              <img src="assets/images/blog-5-ways.webp" alt="Businesses reducing their environmental impact"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+
+              <!-- Dark Gradient -->
+              <div class="absolute inset-0 bg-gradient-to-t from-[#014936]/80 from-[5%] to-transparent to-[41%]"></div>
+
+              <!-- Content -->
+              <div class="absolute inset-x-0 bottom-0 p-5 md:p-5 lg:p-6">
+
+                <h3
+                  class="font-inter font-medium text-[18px] md:text-[20px] lg:text-[25px] text-white tracking-[-0.019em] leading-[1.15] max-w-[90%]">
+                  5 Ways Businesses can reduce their environmental impact
+                </h3>
+
+                <p
+                  class="inline-block mt-3 font-sans font-normal text-white text-xs lg:text-[15px] underline underline-offset-2 hover:text-primary-light transition-colors">
+                  Read More
+                </p>
+
+              </div>
+            </a>
+
+          </article>
+
+          <!-- STORY CARD 2 -->
+          <article class="relative aspect-[577/677] overflow-hidden rounded-[5px] group">
+
+            <!-- Image -->
+            <a href="blog-post-two.html">
+              <img src="assets/images/blog-two.webp" alt="Businesses reducing their environmental impact"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+
+              <!-- Dark Gradient -->
+              <div class="absolute inset-0 bg-gradient-to-t from-[#014936]/80 from-[5%] to-transparent to-[41%]"></div>
+
+              <!-- Content -->
+              <div class="absolute inset-x-0 bottom-0 p-5 md:p-5 lg:p-6">
+
+                <h3
+                  class="font-inter font-medium text-[18px] md:text-[20px] lg:text-[25px] text-white tracking-[-0.019em] leading-[1.15] max-w-[90%]">
+                  The Importance of Environmental Impact Assessments
+                </h3>
+
+                <p
+                  class="inline-block mt-3 font-sans font-normal text-white text-xs lg:text-[15px] underline underline-offset-2 hover:text-primary-light transition-colors">
+                  Read More
+                </p>
+
+              </div>
+            </a>
+          </article>
+
+          <!-- STORY CARD 3 -->
+          <article class="relative aspect-[577/677] overflow-hidden rounded-[5px] group">
+
+            <!-- Image -->
+            <a href="blog-post-three.html">
+              <img src="assets/images/blog-three-image.webp" alt="Businesses reducing their environmental impact"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+
+              <!-- Dark Gradient -->
+              <div class="absolute inset-0 bg-gradient-to-t from-[#014936]/80 from-[5%] to-transparent to-[41%]"></div>
+
+              <!-- Content -->
+              <div class="absolute inset-x-0 bottom-0 p-5 md:p-5 lg:p-6">
+
+                <h3
+                  class="font-inter font-medium text-[18px] md:text-[20px] lg:text-[25px] text-white tracking-[-0.019em] leading-[1.15] max-w-[90%]">
+                  Environmental Permitting: An Overview of the Process
+                </h3>
+
+                <p
+                  class="inline-block mt-3 font-sans font-normal text-white text-xs lg:text-[15px] underline underline-offset-2 hover:text-primary-light transition-colors">
+                  Read More
+                </p>
+
+              </div>
+            </a>
+          </article>
+
 
         </div>
-</a>
-      </article>
 
-      <!-- STORY CARD 3 -->
-      <article class="relative aspect-[577/677] overflow-hidden rounded-[5px] group">
+      </div>
+    </div>
 
-        <!-- Image -->
-         <a href="blog-post-three.html">
-        <img
-          src="assets/images/blog-three-image.webp"
-          alt="Businesses reducing their environmental impact"
-          class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        >
+  </section>
 
-        <!-- Dark Gradient -->
-        <div class="absolute inset-0 bg-gradient-to-t from-[#014936]/80 from-[5%] to-transparent to-[41%]"></div>
 
-        <!-- Content -->
-        <div class="absolute inset-x-0 bottom-0 p-5 md:p-5 lg:p-6">
+  <section class="bg-primary-light py-16 md:py-16">
+    <div
+      class="max-w-[1600px] mx-auto px-6 md:px-20 lg:px-24 flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-4">
 
-          <h3 class="font-inter font-medium text-[18px] md:text-[20px] lg:text-[25px] text-white tracking-[-0.019em] leading-[1.15] max-w-[90%]">
-           Environmental Permitting: An Overview of the Process
-          </h3>
+      <h2
+        class="font-sans font-medium text-primary-dark text-[28px] md:text-[40px] leading-[1.1]  tracking-[-0.02em] max-w-[700px]">
+        Empowering businesses towards a sustainable future
+      </h2>
 
-          <p
-            
-            class="inline-block mt-3 font-sans font-normal text-white text-xs lg:text-[15px] underline underline-offset-2 hover:text-primary-light transition-colors"
-          >
-            Read More
+      <a href="/contact.html"
+        class="inline-flex items-center gap-2 font-sans font-medium text-primary-dark text-lg md:text-[22px] hover:gap-3 transition-all shrink-0">
+        Talk to us <span aria-hidden="true">→</span>
+      </a>
+
+    </div>
+  </section>
+
+
+  <footer class="bg-primary-dark py-14 md:py-20 lg:pb-10">
+    <div class="max-w-[1600px] mx-auto px-6 md:px-16  ">
+
+      <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-10 lg:gap-6">
+
+        <p
+          class="font-sans font-normal text-white text-[24px] lg:text-[28px] xl:text-[28px] leading-[1.3] max-w-[700px]">
+          From the Red Sea to the Arabian Gulf, we've been on the ground so your project stays on track.
         </p>
 
+        <div class="lg:pt-1">
+          <p class="font-sans font-medium text-white text-lg mb-3">
+            Get in touch with our team
+          </p>
+
+          <form class="flex items-center border border-white rounded-full p-1.5 pl-5 w-[520px] max-w-full">
+            <input type="email" placeholder="Enter your email"
+              class="flex-1 bg-transparent outline-none font-sans text-sm text-primary-dark placeholder:text-gray-400 min-w-0" />
+
+            <button type="submit"
+              class="shrink-0 bg-primary text-white font-sans text-sm rounded-full px-6 py-2.5 hover:bg-primary-dark transition-colors">
+              Subscribe
+            </button>
+          </form>
         </div>
-</a>
-      </article>
 
-
-    </div>
-
-  </div>
-  </div>
-
-</section>
-
-
-<section class="bg-primary-light py-16 md:py-16">
-  <div class="max-w-[1600px] mx-auto px-6 md:px-20 lg:px-24 flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-4">
-    
-    <h2 class="font-sans font-medium text-primary-dark text-[28px] md:text-[40px] leading-[1.1]  tracking-[-0.02em] max-w-[700px]">
-      Empowering businesses towards a sustainable future
-    </h2>
-
-    <a href="/contact.html" class="inline-flex items-center gap-2 font-sans font-medium text-primary-dark text-lg md:text-[22px] hover:gap-3 transition-all shrink-0">
-      Talk to us <span aria-hidden="true">→</span>
-    </a>
-
-  </div>
-</section>
-
-
-<footer class="bg-primary-dark py-14 md:py-20 lg:pb-10">
-  <div class="max-w-[1600px] mx-auto px-6 md:px-16  ">
-
-  <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-10 lg:gap-6">
-
-  <p class="font-sans font-normal text-white text-[24px] lg:text-[28px] xl:text-[28px] leading-[1.3] max-w-[700px]">
-    From the Red Sea to the Arabian Gulf, we've been on the ground so your project stays on track.
-  </p>
-
- <div class="lg:pt-1">
-  <p class="font-sans font-medium text-white text-lg mb-3">
-    Get in touch with our team
-  </p>
-
-  <form class="flex items-center border border-white rounded-full p-1.5 pl-5 w-[520px] max-w-full">
-    <input
-      type="email"
-      placeholder="Enter your email"
-      class="flex-1 bg-transparent outline-none font-sans text-sm text-primary-dark placeholder:text-gray-400 min-w-0"
-    />
-
-    <button
-      type="submit"
-      class="shrink-0 bg-primary text-white font-sans text-sm rounded-full px-6 py-2.5 hover:bg-primary-dark transition-colors"
-    >
-      Subscribe
-    </button>
-  </form>
-</div>
-
-</div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4  gap-10 md:gap-6 mt-16 md:mt-40">
-
-      <div>
-        <!-- <h3 class="font-sans font-medium text-[#E7E7E7] text-[18px] mb-5">Quick Links</h3> -->
-        <ul class="space-y-3">
-          <li><a href="about.html" class="font-sans font-normal text-white text-[16px] hover:text-primary-light transition-colors">About</a></li>
-          <li><a href="service.html" class="font-sans font-normal text-white  text-[16px] hover:text-primary-light transition-colors">Services</a></li>
-          <li><a href="contact.html" class="font-sans font-normal text-white  text-[16px] hover:text-primary-light transition-colors">Contact</a></li>
-          <li><a href="blog.html" class="font-sans font-normal text-white  text-[16px] hover:text-primary-light transition-colors">Blogs</a></li>
-        </ul>
       </div>
 
-      <div>
-        <h3 class="font-sans font-medium text-[#E7E7E7] text-[18px] mb-5">UAE</h3>
-        <ul class="space-y-3">
-          <li class="flex items-start gap-2">
-            <!-- <img src="assets/images/location-icon.png" class="h-[24px] w-auto" alt="" srcset=""> -->
-            <span class="font-sans font-normal text-white text-[16px] leading-snug">Office No: OFF2-0113, Ras Al Khor Industrial Area 3rd, Bur Dubai</span>
-          </li>
-          <li class="flex items-center gap-2">
-            <!-- <img src="assets/images/phone-icon.png" class="h-[24px] w-auto" alt=""> -->
-            <a href="tel:+971503557600" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">+971 50-355-7600</a>
-          </li>
-        </ul>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4  gap-10 md:gap-6 mt-16 md:mt-40">
+
+        <div>
+          <!-- <h3 class="font-sans font-medium text-[#E7E7E7] text-[18px] mb-5">Quick Links</h3> -->
+          <ul class="space-y-3">
+            <li><a href="about.html"
+                class="font-sans font-normal text-white text-[16px] hover:text-primary-light transition-colors">About</a>
+            </li>
+            <li><a href="service.html"
+                class="font-sans font-normal text-white  text-[16px] hover:text-primary-light transition-colors">Services</a>
+            </li>
+            <li><a href="contact.html"
+                class="font-sans font-normal text-white  text-[16px] hover:text-primary-light transition-colors">Contact</a>
+            </li>
+            <li><a href="blog.html"
+                class="font-sans font-normal text-white  text-[16px] hover:text-primary-light transition-colors">Blogs</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-sans font-medium text-[#E7E7E7] text-[18px] mb-5">UAE</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2">
+              <!-- <img src="assets/images/location-icon.png" class="h-[24px] w-auto" alt="" srcset=""> -->
+              <span class="font-sans font-normal text-white text-[16px] leading-snug">Office No: OFF2-0113, Ras Al Khor
+                Industrial Area 3rd, Bur Dubai</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <!-- <img src="assets/images/phone-icon.png" class="h-[24px] w-auto" alt=""> -->
+              <a href="tel:+971503557600"
+                class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">+971
+                50-355-7600</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lg:ms-10">
+          <h3 class="font-sans font-medium text-[#E7E7E7] text-[18px] mb-5">KSA</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2">
+              <!-- <img src="assets/images/location-icon.png" class="h-[24px] w-auto" alt=""> -->
+              <span class="font-sans font-normal text-white text-[16px] leading-snug">Office No: 304, Building 7963,
+                Prince Muqrin St, Madynat Al Umal 34441, Khobar, KSA</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <!-- <img src="assets/images/phone-icon.png" class="h-[24px] w-auto" alt=""> -->
+              <a href="tel:+971503557600"
+                class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">+966
+                54-818-1978</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex lg:justify-end items-center">
+          <img src="assets/images/pg-logo.png" alt="Planet Green logo" class="h-8 md:h-12 w-auto object-contain" />
+        </div>
+
       </div>
 
-      <div class="lg:ms-10">
-        <h3 class="font-sans font-medium text-[#E7E7E7] text-[18px] mb-5">KSA</h3>
-        <ul class="space-y-3">
-          <li class="flex items-start gap-2">
-            <!-- <img src="assets/images/location-icon.png" class="h-[24px] w-auto" alt=""> -->
-            <span class="font-sans font-normal text-white text-[16px] leading-snug">Office No: 304, Building 7963, Prince Muqrin St, Madynat Al Umal 34441, Khobar, KSA</span>
-          </li>
-          <li class="flex items-center gap-2">
-           <!-- <img src="assets/images/phone-icon.png" class="h-[24px] w-auto" alt=""> -->
-            <a href="tel:+971503557600" class="font-sans font-normal text-white text-lg hover:text-primary-light transition-colors">+966 54-818-1978</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="flex lg:justify-end items-center">
-        <img src="assets/images/pg-logo.png" alt="Planet Green logo" class="h-8 md:h-12 w-auto object-contain" />
+      <div class="mt-16 md:mt-4 flex justify-start">
+        <p class="font-sans font-normal text-[#B9B9B9] text-[10px]">&copy; Copyright 2026 Planet Green</p>
       </div>
 
     </div>
-
-    <div class="mt-16 md:mt-4 flex justify-start">
-      <p class="font-sans font-normal text-[#B9B9B9] text-[10px]">&copy; Copyright 2026 Planet Green</p>
-    </div>
-
-  </div>
-</footer>
+  </footer>
 
 
 
 
-    <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
+
 </html>
